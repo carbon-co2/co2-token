@@ -2,12 +2,14 @@
 Carbon Smart Contract
 
 // Mainnet
-    address projectOwner = 0xD1951F29df815173fFD6AC0676b2efE220009536;          // Combating Climate Change Projects
-	address co2CorpWallet = 0x0C86691031765f9FDd304649E351F6B03f90CD48;         // CO2-1-0 (CARBON) CORP
-	address privateSaleWallet = 0x667097A52021D926cA12402CD482159f01426E39;     // Private Sale (VCs & HNWIs)
-	address presaleIDOWallet = 0x7bE7ADCEB0667c5Ba42be24e03728464Bdad0409;      // Pre Sale /IDO (Air Drop, Bounty, Community, Etc.)
-	address workingTeamWallet = 0x63593FA35006E58a5Ac8Fe425918a011C5bBe61a;     // Working Team
-	address boardOfAdvisory = 0x8Ff56533a502c276F6AE012Ae76a3868C35DA35A;       // Board of Advisory
+    address carbonianWallet = 0xA4e611EDaE26c9689C853cD224f0051741595538;               // Carbonian (Master Wallet)
+    address climateChangeProjectWallet = 0xD1951F29df815173fFD6AC0676b2efE220009536;    // Combating Climate Change Projects
+    address co2CorpWallet = 0x0C86691031765f9FDd304649E351F6B03f90CD48;                 // CO2-1-0 (CARBON) CORP
+    address privateSalesWallet = 0x667097A52021D926cA12402CD482159f01426E39;            // Private Sales (VCs & HNWIs)
+    address presalesWallet = 0x7bE7ADCEB0667c5Ba42be24e03728464Bdad0409;                // Pre Sales (Air Drop, Bounty, Community, Etc.)
+    address workingTeamWallet = 0x63593FA35006E58a5Ac8Fe425918a011C5bBe61a;             // Working Team
+    address boardOfAdvisoryWallet = 0x8Ff56533a502c276F6AE012Ae76a3868C35DA35A;         // Board of Advisory
+    address offsetterWallet = 0x24f609687eD683Fed86A96ED6C643F7769076b27;               // Offsetter
 
 // Testnet
 	address carbonianWallet = 0x5B92e4dD06E3E39025DC25baCe3eD62C8989f52E;       // Carbonian (Master Wallet)
