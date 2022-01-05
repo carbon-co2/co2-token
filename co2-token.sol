@@ -363,7 +363,6 @@ contract CarbonToken is ERC20, Ownable, ERC20Detailed {
     address constant carbonianWallet = 0xA4e611EDaE26c9689C853cD224f0051741595538;               // Carbonian (Master Wallet)
     address constant privateSalesWallet = 0x667097A52021D926cA12402CD482159f01426E39;            // Private Sales (VCs & HNWIs)
     address constant presalesWallet = 0x7bE7ADCEB0667c5Ba42be24e03728464Bdad0409;                // Pre Sales (Air Drop, Bounty, Community, Etc.)
-    address constant offsetterWallet = 0x24f609687eD683Fed86A96ED6C643F7769076b27;               // Offsetter
 
     uint256 private totalCoins;
     struct LockItem {
