@@ -360,14 +360,10 @@ contract ERC20Detailed is IERC20 {
 }
 
 contract CarbonToken is ERC20, Ownable, ERC20Detailed {
-    address carbonianWallet = 0xA4e611EDaE26c9689C853cD224f0051741595538;               // Carbonian (Master Wallet)
-    address climateChangeProjectWallet = 0xD1951F29df815173fFD6AC0676b2efE220009536;    // Combating Climate Change Projects
-    address co2CorpWallet = 0x0C86691031765f9FDd304649E351F6B03f90CD48;                 // CO2-1-0 (CARBON) CORP
-    address privateSalesWallet = 0x667097A52021D926cA12402CD482159f01426E39;            // Private Sales (VCs & HNWIs)
-    address presalesWallet = 0x7bE7ADCEB0667c5Ba42be24e03728464Bdad0409;                // Pre Sales (Air Drop, Bounty, Community, Etc.)
-    address workingTeamWallet = 0x63593FA35006E58a5Ac8Fe425918a011C5bBe61a;             // Working Team
-    address boardOfAdvisoryWallet = 0x8Ff56533a502c276F6AE012Ae76a3868C35DA35A;         // Board of Advisory
-    address offsetterWallet = 0x24f609687eD683Fed86A96ED6C643F7769076b27;               // Offsetter
+    address constant carbonianWallet = 0xA4e611EDaE26c9689C853cD224f0051741595538;               // Carbonian (Master Wallet)
+    address constant privateSalesWallet = 0x667097A52021D926cA12402CD482159f01426E39;            // Private Sales (VCs & HNWIs)
+    address constant presalesWallet = 0x7bE7ADCEB0667c5Ba42be24e03728464Bdad0409;                // Pre Sales (Air Drop, Bounty, Community, Etc.)
+    address constant offsetterWallet = 0x24f609687eD683Fed86A96ED6C643F7769076b27;               // Offsetter
 
     uint256 private totalCoins;
     struct LockItem {
@@ -583,7 +579,7 @@ contract CarbonToken is ERC20, Ownable, ERC20Detailed {
         address receiver,
         uint256 amount,
         uint256 projectId
-    ) public returns (bool success) {
+    ) external returns (bool success) {
         require(receiver != address(0));
         require(projectId > 0);
         require(amount <= getAvailableBalance(msg.sender));
@@ -605,7 +601,7 @@ contract CarbonToken is ERC20, Ownable, ERC20Detailed {
         uint256 amount,
         uint256 releaseDate,
         uint256 projectId
-    ) public returns (bool success) {
+    ) external returns (bool success) {
         require(projectId > 0);
         ERC20._transfer(msg.sender, receiver, amount);
         if (lockList[receiver].length == 0) lockedAddressList.push(receiver);
